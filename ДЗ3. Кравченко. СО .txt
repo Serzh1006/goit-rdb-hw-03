@@ -1,0 +1,22 @@
+﻿1.        select * from products
+select name, phone from shippers
+
+
+2.        select avg(price) as Price_avg, min(price) as Price_min, max(price) as Price_max
+        from products
+
+
+3.        select distinct(category_id) as unique_id, distinct(price) as unique_price
+        from products
+        order by price desc
+        limit 10
+
+
+4.        select count(price) from products
+where price > 10 and price < 100;
+
+
+5.        select supplier_id, count(*) as product_count,
+ avg(price) as price_avg 
+from products
+order by supplier_id
